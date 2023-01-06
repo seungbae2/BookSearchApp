@@ -24,7 +24,7 @@ class BookSearchAdapter : ListAdapter<Book, BookSearchViewHolder>(BookDiffCallba
     }
 
     private var onItemClickListener: ((Book) -> Unit)? = null
-    fun setOnItemClickListene(listener: (Book) -> Unit) {
+    fun setOnItemClickListener(listener: (Book) -> Unit) {
         onItemClickListener = listener
     }
 
