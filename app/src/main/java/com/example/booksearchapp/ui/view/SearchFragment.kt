@@ -58,7 +58,7 @@ class SearchFragment : Fragment() {
             )
             adapter = bookSearchAdapter
         }
-        bookSearchAdapter.setOnItemClickListene {
+        bookSearchAdapter.setOnItemClickListener {
             val action = SearchFragmentDirections.actionFragmentSearchToFragmentBook(it)
             findNavController().navigate(action)
         }

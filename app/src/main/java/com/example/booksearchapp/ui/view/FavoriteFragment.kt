@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.booksearchapp.databinding.FragmentFavoriteBinding
 import com.example.booksearchapp.ui.adapter.BookSearchAdapter
 import com.example.booksearchapp.ui.viewmodel.BookSearchViewModel
+import com.example.booksearchapp.util.collectLatestStateFlow
 import com.google.android.material.snackbar.Snackbar
 
 class FavoriteFragment : Fragment() {
@@ -38,7 +39,7 @@ class FavoriteFragment : Fragment() {
         setupRecyclerView()
         setupTouchHelper(view)
 
-        bookSearchViewModel.favoriteBooks.observe(viewLifecycleOwner) {
+        collectLatestStateFlow(bookSearchViewModel.favoriteBooks) {
             bookSearchAdapter.submitList(it)
         }
     }
@@ -58,7 +59,7 @@ class FavoriteFragment : Fragment() {
             adapter = bookSearchAdapter
         }
         bookSearchAdapter.setOnItemClickListener {
-            val action = SearchFragmentDirections.actionFragmentSearchToFragmentBook(it)
+            val action = FavoriteFragmentDirections.actionFragmentFavoriteToFragmentBook(it)
             findNavController().navigate(action)
         }
     }
