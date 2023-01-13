@@ -36,4 +36,5 @@ class MainActivityTest {
         val activityState = activityScenarioRule.scenario.state.name
         assertThat(activityState).isEqualTo("RESUMED")
     }
+
 }
