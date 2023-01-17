@@ -37,7 +37,6 @@ class BookFragment : Fragment() {
     @SuppressLint("SetJavaScriptEnabled")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-//        bookSearchViewModel = (activity as MainActivity).bookSearchViewModel
 
         val book = args.book
         binding.webview.apply {
