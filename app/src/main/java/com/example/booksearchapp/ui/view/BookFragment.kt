@@ -21,8 +21,6 @@ class BookFragment : Fragment() {
 
     private val args by navArgs<BookFragmentArgs>()
 
-    //    private lateinit var bookSearchViewModel: BookSearchViewModel
-//    private val bookSearchViewModel by activityViewModels<BookSearchViewModel>()
     private val bookViewModel by viewModels<BookViewModel>()
 
     override fun onCreateView(
