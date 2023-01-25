@@ -10,7 +10,7 @@ kakao 책검색 Api를 이용한 책검색 앱
 
 ## UI 구성
 
-## 아키텍쳐
+## Architecture
 
 ## 데이터 흐름
 
