@@ -2,7 +2,7 @@
 
 ## 개요
 
-kakao 책검색 Api를 이용한 책검색 앱
+Book search api with kakao search api
 
 ## 구현사항
 
