@@ -2,16 +2,16 @@
 
 ## 개요
 
-Book search api with kakao search api
+Book search app with kakao search api
 
-## 구현사항
+## implementations
 
 ## Getting Started
 
-## UI 구성
+## UI Structure
 
 ## Architecture
 
-## 데이터 흐름
+## Data flow
 
-## 사용한 기술
+## Libraries
