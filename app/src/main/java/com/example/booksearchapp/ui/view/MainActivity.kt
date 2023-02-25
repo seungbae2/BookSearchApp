@@ -18,12 +18,8 @@ class MainActivity : AppCompatActivity() {
         ActivityMainBinding.inflate(layoutInflater)
     }
 
-    //    lateinit var bookSearchViewModel: BookSearchViewModel
     private lateinit var navController: NavController
     private lateinit var appBarConfiguration: AppBarConfiguration
-
-//    private val Context.dataStore by preferencesDataStore((DATASTORE_NAME))
-//    private val workManager = WorkManager.getInstance(application)
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,11 +27,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setupJetpackNavigation()
-
-//        val database = BookSearchDatabase.getInstance(this)
-//        val bookSearchRepository = BookSearchRepositoryImpl(database, dataStore)
-//        val factory = BookSearchViewModelProviderFactory(bookSearchRepository, workManager, this)
-//        bookSearchViewModel = ViewModelProvider(this, factory)[BookSearchViewModel::class.java]
     }
 
     private fun setupJetpackNavigation() {
